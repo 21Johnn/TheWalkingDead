@@ -1,0 +1,145 @@
+.assista{
+    .generalBox{
+        margin-left: 14px;
+        margin-right: 14px;        
+    }
+
+    &__container{
+        display: flex;
+        gap: 18px;
+        margin-top: 25px;
+
+        &__rick{
+            img{
+                height: 128px;
+            }
+        }
+
+        &__text{
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                font-size: 18px;
+                color: #FBF6D4;
+                font-family: 'Bebas Neue', cursive;
+            }
+
+            p{
+                font-size: 8px;
+                color: white;
+            }
+
+            .imagesBox{
+                display: flex;
+                gap: 14px;
+
+                img{
+                    height: 16px;
+                }
+            }
+        }
+
+        &__daryl{
+            display: none;
+        }
+    }
+
+    @media (min-width:768px){
+        .generalBox{
+            margin-left: 35px;
+            margin-right: 35px;        
+        }
+
+        &__container{
+            display: flex;
+            gap: 34px;
+            margin-top: 30px;
+    
+            &__rick{
+                img{
+                    height: 229px;
+                }
+            }
+    
+            &__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                h2{
+                    font-size: 28px;
+                }
+    
+                p{
+                    font-size: 10px;
+                }
+    
+                .imagesBox{
+                    gap: 25px;
+    
+                    img{
+                        height: 30px;
+                    }
+                }
+            }
+    
+            &__daryl{
+                display: block;
+                
+                img{
+                    height: 229px;
+                }
+            }
+    }
+
+    @media (min-width:1024px){
+        .generalBox{
+            margin-left: 78px;
+            margin-right: 78px;        
+        }
+
+        &__container{
+            display: flex;
+            gap: 57px;
+            margin-top: 60px;
+    
+            &__rick{
+                img{
+                    height: 450px;
+                }
+            }
+    
+            &__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                h2{
+                    font-size: 36px;
+                }
+    
+                p{
+                    font-size: 16px;
+                }
+    
+                .imagesBox{
+                    gap: 42px;
+    
+                    img{
+                        height: 52px;
+                    }
+                }
+            }
+    
+            &__daryl{
+                display: block;
+                
+                img{
+                    height: 450px;
+                }
+            }
+    }
+    }
+}
+}

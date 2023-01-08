@@ -1,0 +1,154 @@
+.curiosidades{
+
+    .generalBox{
+        padding-left: 14px;
+        padding-right: 14px;        
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 17px;
+    }
+
+    &__images{
+        display: flex;
+        gap: 9px;
+        justify-content: center;
+
+        img{
+            width: 136px;
+        }
+    }
+
+    &__text{
+        margin-top: 9px;
+        text-align: center;
+
+
+        h2{
+            font-size: 24px;
+            color: #FBF6D4;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        p{
+            font-size: 9px;
+            color: white;
+        }
+
+        button{
+            width: 100px;
+            background-color: #D2C4A5;
+            color: #191919;
+            border-radius: 5px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 16px;
+
+            &:hover{
+                background-color: #dcd0b6;
+            }
+        }
+    }
+
+    @media (min-width: 768px){
+        .generalBox{
+            margin-left: 35px;
+            margin-right: 35px;
+            padding: 0;      
+        }
+
+        &__box{
+            display: flex;
+            flex-direction: row;
+            margin-top: 17px;
+            max-width: 764px;
+        }
+
+        &__images{
+            display: flex;
+            gap: 15px;
+    
+            img{
+                width: 238px;
+                height: 184px;
+            }
+        }
+
+        &__text{
+            text-align: left;
+            margin-left: 15px;
+            margin-top: 0;
+            max-height: 184px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            h2{
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+    
+            p{
+                font-size: 9px;
+                margin-bottom: 16px;
+            }
+    
+            button{
+                width: 150px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    @media (min-width: 1024px){
+        .generalBox{
+            margin-left: 78px;
+            margin-right: 78px;
+            padding: 0;      
+        }
+
+        &__box{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            max-width: 764px;
+        }
+
+        &__images{
+            gap: 25px;
+    
+            img{
+                width: 400px;
+                height: 308px;
+            }
+        }
+
+        &__text{
+            margin-left: 25px;
+            margin-top: 0;
+            max-height: 307px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            h2{
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+    
+            p{
+                font-size: 13px;
+                margin-bottom: 30px;
+            }
+    
+            button{
+                width: 190px;
+                font-size: 28px;
+            }
+        }
+    }
+}
